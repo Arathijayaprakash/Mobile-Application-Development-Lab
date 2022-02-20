@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btadd"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="360dp"
+        android:onClick="add"
+        android:text="ADD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btsub"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="360dp"
+        android:onClick="sub"
+        android:text="SUB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toEndOf="@+id/btadd" />
+
+    <Button
+        android:id="@+id/btdiv"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="360dp"
+        android:onClick="div"
+        android:text="DIV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toEndOf="@+id/btsub" />
+
+    <Button
+        android:id="@+id/btmul"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="360dp"
+        android:onClick="mul"
+        android:text="MUL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toEndOf="@+id/btdiv" />
+
+    <EditText
+        android:id="@+id/etnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="Enter num1"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etnum2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="145dp"
+        android:ems="10"
+        android:hint="Enter num2"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btsub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnum1" />
+
+    <TextView
+        android:id="@+id/etans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="222dp"
+        android:text="Result"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btsub" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
